@@ -1,0 +1,30 @@
+{
+    "name": "alexgo93/test-task",
+    "description": "test task for B2B-Center",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "alexgo93",
+            "email": "alekseimell5644@gmail.com"
+        }
+    ],
+    "bin": [
+        "bin/second-task-start"
+    ],
+    "autoload": {
+        "files": [
+            "src/task2/task2.php"
+        ]
+    },
+    "require": {
+        "php": "7.2.*"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.4"
+    },
+    "scripts": {
+        "phpcs": "phpcs",
+        "phpcbf": "phpcbf"
+    }
+}

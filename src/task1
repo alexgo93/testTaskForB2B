@@ -1,0 +1,6 @@
+SELECT u.name, COUNT(pn.phone) as number_of_phones
+FROM users as u INNER JOIN phone_numbers as pn
+ON u.id = pn.user_id
+AND u.gender = 2
+AND u.birth_date BETWEEN 852076800 AND 978307200
+GROUP BY u.name;
